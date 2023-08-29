@@ -3,45 +3,45 @@ var { createDragon, greetRider, eat, findFireBreathers} = require('../exercises/
 
 describe('Dragon', function() {
 
-  it.skip('should be able to create a dragon with a name', function() {
+  it('should be able to create a dragon with a name', function() {
     var dragon = createDragon('Jeff');
-
+    console.log("dragon with a name", dragon);
     assert.equal(dragon.name, 'Jeff');
   });
 
-  it.skip('should be able to have a different name', function() {
+  it('should be able to have a different name', function() {
     var dragon = createDragon('Louisa');
-
+    console.log("dragon with a different name", dragon);
     assert.equal(dragon.name, 'Louisa');
   });
 
-  it.skip('should have a rider', function() {
+  it('should have a rider', function() {
     var dragon = createDragon('Saphira', 'Eragon');
-
+    console.log("dragon with a rider", dragon);
     assert.equal(dragon.name, 'Saphira');
     assert.equal(dragon.rider, 'Eragon');
   });
 
-  it.skip('should be able to have a different rider', function() {
+  it('should be able to have a different rider', function() {
     var dragon = createDragon('Elliot', 'Pete');
-
+    console.log("dragon with a different rider", dragon);
     assert.equal(dragon.name, 'Elliot');
     assert.equal(dragon.rider, 'Pete');
   });
 
-  it.skip('should have a temperment', function() {
+  it('should have a temperment', function() {
     var dragon = createDragon('Saphira', 'Eragon', 'gentle');
-
+    console.log("dragon with a temperment", dragon);
     assert.equal(dragon.name, 'Saphira');
     assert.equal(dragon.rider, 'Eragon');
     assert.equal(dragon.temperment, 'gentle');
   });
 
-  it.skip('should be able to have different temperments', function() {
+  it('should be able to have different temperments', function() {
     var dragon1 = createDragon('Gray', 'Marley', 'aggressive');
     var dragon2 = createDragon('Sky', 'Susie', 'gentle');
-
-
+    console.log("dragon1 with a different temperment", dragon1);
+    console.log("dragon2 with a different temperment", dragon2);
     assert.equal(dragon1.name, 'Gray');
     assert.equal(dragon1.rider, 'Marley');
     assert.equal(dragon1.temperment, 'aggressive');

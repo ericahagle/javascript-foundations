@@ -51,13 +51,14 @@ describe('Dragon', function() {
     assert.equal(dragon2.temperment, 'gentle');
   });
 
-  it.skip('should greet their rider', function() {
+  it('should greet their rider', function() {
     var dragon1 = createDragon('Gray', 'Marley', 'aggressive');
     var dragon2 = createDragon('Sky', 'Susie', 'gentle');
 
     var greeting1 = greetRider(dragon1);
     var greeting2 = greetRider(dragon2);
-
+    console.log("dragon1 greets its rider", dragon1, greeting1);
+    console.log("dragon2 greets its rider", dragon2, greeting2);
     assert.equal(greeting1, 'Hi, Marley!');
     assert.equal(greeting2, 'Hi, Susie!');
   });

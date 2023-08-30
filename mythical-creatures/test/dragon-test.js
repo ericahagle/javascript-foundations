@@ -63,33 +63,37 @@ describe('Dragon', function() {
     assert.equal(greeting2, 'Hi, Susie!');
   });
 
-  it.skip('should start off having eaten 0 times', function() {
+  it('should start off having eaten 0 times', function() {
     var dragon = createDragon('Mushu', 'Mulan', 'aggressive');
-
+    console.log("dragon hasn't eaten", dragon);
     assert.equal(dragon.timesEaten, 0);
   });
 
-  it.skip('should start off being hungry', function() {
+  it('should start off being hungry', function() {
     var dragon = createDragon('Mushu', 'Mulan', 'aggressive');
-
+    console.log("dragon is hungry", dragon);
     assert.equal(dragon.hungry, true);
   });
 
-  it.skip('should be full after eating 3 times', function() {
+  it('should be full after eating 3 times', function() {
     var dragon = createDragon('Lady Vox', 'Emily', 'gentle');
-
+    console.log("dragon hasn't eaten", dragon);
+    console.log("times eaten", dragon.timesEaten);
     var fedDragon = eat(dragon);
-
+    console.log("dragon has eaten once", dragon);
+    console.log("times eaten", fedDragon.timesEaten);
     assert.equal(fedDragon.timesEaten, 1);
     assert.equal(fedDragon.hungry, true);
 
     var doubleFedDragon = eat(fedDragon);
-
+    console.log("dragon has eaten twice", dragon);
+    console.log("times eaten", doubleFedDragon.timesEaten);
     assert.equal(doubleFedDragon.timesEaten, 2);
     assert.equal(doubleFedDragon.hungry, true);
 
     var tripleFedDragon = eat(doubleFedDragon);
-
+    console.log("dragon has eaten thrice", dragon);
+    console.log("times eaten", tripleFedDragon.timesEaten);
     assert.equal(tripleFedDragon.timesEaten, 3);
     assert.equal(tripleFedDragon.hungry, false);
   });

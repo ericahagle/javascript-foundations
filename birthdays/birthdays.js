@@ -3,6 +3,12 @@ function createBirthday(name, month, day) {
   return birthday;
 }
 
+function celebrateBirthday(birthday) {
+  return `Today is ${birthday.month}/${birthday.day}! Happy birthday, ${birthday.name}!`;
+}
+
 module.exports = {
   createBirthday,
+  celebrateBirthday,
+  //   countBirthday
 };

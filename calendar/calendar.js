@@ -19,16 +19,15 @@ function createEvent(title, month, day) {
   } else {
     return event;
   }
-  // ERROR if the the day is <1 or >31
-  // AND month is january, march, may, july, august, october, december
-  // ERROR if the day is <1 or >30
-  // AND month is april, june, september, november
-  // ERROR if the day is <1 or >29
-  // AND the month is february
+}
+
+function createCalendar(owner, events) {
+  var calendar = { owner: owner, events: events };
+  return calendar;
 }
 
 module.exports = {
-  createEvent
-  // createCalendar,
+  createEvent,
+  createCalendar
   // reportMonthlyEvents
 };

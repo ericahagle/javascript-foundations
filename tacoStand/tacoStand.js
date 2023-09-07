@@ -8,11 +8,14 @@ function createTaco(name = 'custom', ingredients = []) {
 	return taco;
 }
 
-
+function addIngredientToTaco(taco, ingredient) {
+	taco.ingredients.push(ingredient);
+	return taco;
+}
 
 module.exports = {
   createIngredient,
 	createTaco,
-	// addIngredientToTaco,
+	addIngredientToTaco,
 	// calculatePrice
 }

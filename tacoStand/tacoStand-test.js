@@ -71,7 +71,7 @@ describe('taco stand', function() {
   })
 
   describe('calculatePrice', function() {
-    it.skip('should calculate the price of a single ingredient taco', function() {
+    it('should calculate the price of a single ingredient taco', function() {
       const steak = createIngredient('steak', 3.50)
       const basicSteakTaco = createTaco('basic steak', [steak])
 

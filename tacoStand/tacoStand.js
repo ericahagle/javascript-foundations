@@ -13,9 +13,14 @@ function addIngredientToTaco(taco, ingredient) {
 	return taco;
 }
 
+function calculatePrice(taco) {
+	// taco includes name and [ingredients]
+	// ingredient includes name and price
+}
+
 module.exports = {
   createIngredient,
 	createTaco,
 	addIngredientToTaco,
-	// calculatePrice
+	calculatePrice
 }

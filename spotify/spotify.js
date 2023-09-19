@@ -1,4 +1,11 @@
 
 
 
-  module.exports = {  }
+  module.exports = {
+    createCollection,
+    createTrack,
+    reviewTrack,
+    addTrack,
+    getTotalDuration,
+    findTracksByArtist
+  }
